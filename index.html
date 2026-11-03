@@ -1,0 +1,370 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamachoLandia - Máquinas y Dragones</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Font Awesome (iconos profesionales) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Fuentes profesionales -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <i class="fa-solid fa-cube logo-icon"></i>
+                <span class="logo-text">Camacho<span class="logo-accent">Landia</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#nosotros"><i class="fa-solid fa-scroll"></i> Nosotros</a></li>
+                <li><a href="#modos"><i class="fa-solid fa-gamepad"></i> Modos</a></li>
+                <li><a href="#galeria"><i class="fa-solid fa-images"></i> Galería</a></li>
+                <li><a href="#staff"><i class="fa-solid fa-users-gear"></i> Staff</a></li>
+                <li><a href="#unirse"><i class="fa-solid fa-right-to-bracket"></i> Unirse</a></li>
+            </ul>
+            <button class="btn-play">
+                <i class="fa-solid fa-play"></i> JUGAR
+            </button>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-server"></i>
+                <span>SERVIDOR ACTIVO 24/7</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">Camacho<span class="accent">Landia</span></span>
+                <span class="title-sub">
+                    <i class="fa-solid fa-gears"></i>
+                    Máquinas y Dragones
+                    <i class="fa-solid fa-dragon"></i>
+                </span>
+            </h1>
+            <p class="hero-description">
+                CamachoLandia el servidor donde los integrantes pueden hacer super maquinas automatizadoras y domar grandes dragones para pelear, es un sitio amigable pero cuidado con AnarcoCap
+            </p>
+            <div class="hero-buttons">
+                <a href="#unirse" class="btn btn-primary">
+                    <i class="fa-solid fa-shield-halved"></i> UNIRME AHORA
+                </a>
+                <a href="#modos" class="btn btn-secondary">
+                    <i class="fa-solid fa-book"></i> VER MODOS
+                </a>
+            </div>
+            <div class="server-ip">
+                <span class="ip-label">
+                    <i class="fa-solid fa-network-wired"></i> IP DEL SERVIDOR:
+                </span>
+                <span class="ip-value" id="server-ip">Rodrielpro_29.aternos.me:24452</span>
+                <button class="copy-btn" id="copyBtn">
+                    <i class="fa-regular fa-copy"></i> COPIAR
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- ============ NOSOTROS ============ -->
+    <section id="nosotros" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-compass"></i> CONÓCENOS</span>
+                <h2 class="section-title">Sobre CamachoLandia</h2>
+                <p class="section-subtitle">Larga historia, pocos sobrevivientes</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <!-- REEMPLAZA src CON LA RUTA DE TU IMAGEN -->
+                    <img src="CamachoLandiaInicios.png" alt="CamachoLandia">
+                    <div class="image-overlay">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Nuestra historia</h3>
+                    <p>CamachoLandia fue creado en 2021, dos amigos Camacho y LobosLenged decidieron hacer un servidor que empezó desde la nada y empezaron a invitar a sus amigos sin imaginar que terminaria siendo un servidor tan grande y con tanta historia</p>
+                    <p>Camacholandia tiene un monton de historia, cronologicamente empieza desde la creación, declarar territorio camachesco, creación de granjas y la creación de colonias como Draconia hasta que llegaron las guerras donde los miembros se enfrentaban por diversos desacuerdos, solo sobreviviendo Camacho y LobosLegend</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">JUGADORES</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">ONLINE</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-calendar"></i>
+                            <span class="stat-number" data-target="2021">0</span>
+                            <span class="stat-label">DESDE</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Naciones</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MODOS DE JUEGO ============ -->
+    <section id="modos" class="section modes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-gamepad"></i> EXPERIENCIAS</span>
+                <h2 class="section-title">NACIONES</h2>
+                <p class="section-subtitle">Las naciones que nos conforman</p>
+            </div>
+            <div class="modes-grid">
+                <!-- MODO 1 -->
+                <div class="mode-card reveal">
+                    <div class="mode-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>CamachoLandia</h3>
+                    <p>La primera nación, fundador de todo bajo el poder de Camacho y seguidores del tomate</p>
+                    <div class="mode-features">
+                        <span><i class="fa-solid fa-check"></i> Gran terreno y gran cantidad de maquinas automatizadoras</span>
+                        <span><i class="fa-solid fa-check"></i> Todos cuentan con recursos basicos para vivir</span>
+                        <span><i class="fa-solid fa-check"></i> Siguen al dios tomate y cultivan</span>
+                    </div>
+                </div>
+                <!-- MODO 2 - DESTACADO -->
+                <div class="mode-card featured reveal">
+                <div class="mode-badge">POPULAR</div>
+                    <div class="mode-icon">
+                        <i class="fa-solid fa-dragon"></i>
+                    </div>
+                    <h3>Anarcocap</h3>
+                    <p>Anarcocapitalista, progresista, civilizados(camacholandia tambien es), organizados, comunales y justicia</p>
+                    <div class="mode-features">
+                        <span><i class="fa-solid fa-check"></i> Grandes dominios</span>
+                        <span><i class="fa-solid fa-check"></i> Fabrica de energía suprema</span>
+                        <span><i class="fa-solid fa-check"></i> Ciudad</span>
+                    </div>
+                </div>
+                <!-- MODO 3 -->
+                <div class="mode-card reveal">
+                    <div class="mode-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Tu propia nación</h3>
+                    <p>Hay mucho terreno sin reclamar!</p>
+                    <div class="mode-features">
+                        <span><i class="fa-solid fa-check"></i> Tus propias reglas</span>
+                        <span><i class="fa-solid fa-check"></i> Tu propia gente</span>
+                        <span><i class="fa-solid fa-check"></i> Tus ordenes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section id="galeria" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-camera"></i> MOMENTOS</span>
+                <h2 class="section-title">Galería del Servidor</h2>
+                <p class="section-subtitle">Momentos de la comunidad</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- REEMPLAZA src CON LAS RUTAS DE TUS IMÁGENES -->
+                <div class="gallery-item reveal">
+                    <img src="CamachoLandiaDragones.png" alt="Captura 1">
+                    <div class="gallery-overlay">
+                        <p>Dragones de CamachoLandia</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="CamachoLandiaColiseo.png" alt="Captura 2">
+                    <div class="gallery-overlay">
+                        <p>Coliseo de CamachoLandia</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="CamachoLandiaCerezos.png" alt="Captura 3">
+                    <div class="gallery-overlay">
+                        <p>Cerezos de CamachoLandia</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="CamachoLandiaCrafteos.png" alt="Captura 4">
+                    <div class="gallery-overlay">
+                        <p>Crafteos de CamachoLandia</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="CamachoLandiaGranjaMadera.png" alt="Captura 5">
+                    <div class="gallery-overlay">
+                        <p>Granja de Madera de CamachoLandia</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STAFF ============ -->
+    <section id="staff" class="section staff">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-crown"></i> EQUIPO</span>
+                <h2 class="section-title">Nuestro Staff</h2>
+                <p class="section-subtitle">[Subtítulo sobre el equipo]</p>
+            </div>
+            <div class="staff-grid">
+                <!-- MIEMBRO 1 -->
+                <div class="staff-card reveal">
+                    <div class="staff-avatar">
+                        <img src="[FOTO_STAFF_1.jpg]" alt="Staff 1">
+                        <div class="staff-rank owner">OWNER</div>
+                    </div>
+                    <h3>Rodrigo Camacho</h3>
+                    <p class="staff-role">Fundador</p>
+                    <p class="staff-bio">Fundador y líder del servidor. (Comunista segun omar pero no es)</p>
+                    <div class="staff-social">
+                    </div>
+                </div>
+                <!-- MIEMBRO 2 -->
+                <div class="staff-card reveal">
+                    <div class="staff-avatar">
+                        <img src="[FOTO_STAFF_2.jpg]" alt="Staff 2">
+                        <div class="staff-rank admin">ADMIN</div>
+                    </div>
+                    <h3>Omar</h3>
+                    <p class="staff-role">Administrador</p>
+                    <p class="staff-bio">Omar, administrador del servidor, segun el justo y traihar (Aunque igual a veces se va por su cuenta)</p>
+                    <div class="staff-social">
+                    </div>
+                </div>
+    </section>
+
+    <!-- ============ UNIRSE ============ -->
+    <section id="unirse" class="section join">
+        <div class="container">
+            <div class="join-box reveal">
+                <div class="join-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h2>¿Listo para la aventura?</h2>
+                <p>Unete a nuestro servidor y vive la mejor experiencia de Minecraft </p>
+                <div class="join-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Abre Minecraft</h4>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Multijugador</h4>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Añadir Servidor</h4>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>¡Jugar!</h4>
+                    </div>
+                </div>
+                <div class="server-ip big">
+                    <span class="ip-label">
+                        <i class="fa-solid fa-network-wired"></i> IP DEL SERVIDOR:
+                    </span>
+                    <span class="ip-value" id="server-ip-2">Rodrielpro_29.aternos.me:24452</span>
+                    <button class="copy-btn" id="copyBtn2">
+                        <i class="fa-regular fa-copy"></i> COPIAR
+                    </button>
+                </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fa-solid fa-cube logo-icon"></i>
+                        <span class="logo-text">Camacho<span class="logo-accent">Landia</span></span>
+                    </div>
+                    <p>[Descripción corta del servidor para el footer.]</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="#nosotros"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
+                        <li><a href="#modos"><i class="fa-solid fa-chevron-right"></i> Modos</a></li>
+                        <li><a href="#galeria"><i class="fa-solid fa-chevron-right"></i> Galería</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Discord</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Tienda</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Votaciones</a></li>
+                        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Reglas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> [EMAIL]</li>
+                        <li><i class="fa-solid fa-server"></i> Rodrielpro_29.aternos.me:24452</li>
+                        <li><i class="fa-brands fa-discord"></i> [DISCORD]</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CamachoLandia. Todos los derechos reservados.</p>
+                <p>No afiliado oficialmente con Mojang o Microsoft.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
